@@ -1,0 +1,419 @@
+.container {
+  background-color:#020012;
+  .sectionOne{
+    height: 100vh;
+    background: url('../public/images/bg.svg') no-repeat;
+    background-size: 100% 100%;
+    .sectionHead{
+      height: 56px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      padding: 0 120px;
+      .headLeft{
+        display: flex;
+        align-items: center;
+        img{
+          width: 38px;
+          height: 38px;
+          margin-right: 10px;
+        }
+        span{
+          color: #FFFFFF;
+          font-size: 24px;
+          span{
+            font-size: 20px;
+            color: #7E96B8;
+          }
+        }
+      }
+      .headRight{
+        display: flex;
+        align-items: center;
+        i{
+          margin-right: 20px;
+          cursor: pointer;
+          transition: all .2s;
+        }
+        div{
+          width: 124px;
+          padding: 10px 15px;
+          background: rgba(18, 220, 246, 0.15);
+          border-radius: 8px;
+          cursor: pointer;
+          span{
+            background: linear-gradient(85.36deg, #F33ABF -46.75%, #03FCF7 122.31%);
+            background-clip: text;
+            color: transparent;
+            font-weight: 800
+          }
+        }
+      }
+    }
+    .sectionBody{
+      display: flex;
+      flex-direction: column;
+      padding-left: 120px;
+      flex: 1;
+      margin-top: 180px;
+      .title1{
+        font-size: 60px;
+        background: linear-gradient(327.61deg, #277EFF 25.21%, #12DCF6 69.16%);
+        background-clip: text;
+        color: transparent;
+        font-weight: bold;
+      }
+      .title2{
+        font-size: 60px;
+        color: white;
+        font-weight: bold;
+      }
+      .title3{
+        font-size: 20px;
+        color: #7E96B8;
+        font-weight: 500;
+      }
+      .btnGroup{
+        margin: 30px 0 60px 0;
+        img{
+          cursor: pointer;
+          width: 174px;
+          height: 56px;
+          margin-right: 22px
+        }
+      }
+      .numInfo{
+        display: flex;
+        align-items: center;
+        .infoBox{
+          display: flex;
+          flex-direction: column;
+          span{
+            color: #7E96B8;
+            font-weight: 500;
+            font-size: 16px;
+            &.top{
+              color: white;
+              font-size: 24px;
+            }
+          }
+        }
+        .line{
+          height: 42px;
+          width: 1px;
+          background-color: #676771;
+          margin: 0 40px;
+        }
+      }
+    }
+  };
+  .sectionTwo{
+    height: 1462px;
+    background: url('../public/images/bg1.svg') no-repeat;
+    background-size: cover;
+    .title4{
+      font-weight: bold;
+      font-size: 54px;
+      color: white;
+      margin-top: 198px;
+    }
+    .title5{
+      font-weight: 500;
+      font-size: 18px;
+      background: linear-gradient(327.61deg, #277EFF 25.21%, #12DCF6 69.16%);
+      background-clip: text;
+      color: transparent;
+      margin-bottom: 80px;
+    }
+  }
+  .sectionThree{
+    background: url('../public/images/bg4.svg') no-repeat;
+    background-size: 100%,100%;
+    height: 650px;
+    .title6{
+      font-weight: bold;
+      font-size: 54px;
+      color: white;
+      margin-top: 136px;
+    }
+    .title7{
+      font-weight: 500;
+      font-size: 18px;
+      background: linear-gradient(327.61deg, #277EFF 25.21%, #12DCF6 69.16%);
+      background-clip: text;
+      color: transparent;
+      margin-bottom: 92px;
+    }
+  }
+  .sectionFour{
+    background: url('../public/images/bg5.svg') no-repeat;
+    background-size: 100%,100%;
+    height: 1100px;
+    background-position-y: bottom;
+    .title7{
+      font-weight: bold;
+      font-size: 54px;
+      color: white;
+      margin-top: 120px;
+    }
+    .title8{
+      font-weight: 500;
+      font-size: 18px;
+      background: linear-gradient(327.61deg, #277EFF 25.21%, #12DCF6 69.16%);
+      background-clip: text;
+      color: transparent;
+      margin-bottom: 84px;
+    }
+  }
+  .sectionFive{
+    background: url('../public/images/bg6.svg') no-repeat;
+    background-size: 100%,100%;
+    height: 1088px;
+    margin-top: 122px;
+    .roadMapTitle{
+      color: white;
+      font-weight: bold;
+      font-size: 54px;
+      margin-bottom: 98px;
+    }
+    .mapBox{
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      .dateTitle{
+        background: linear-gradient(85.36deg, #03FCF7 -46.75%, #F33ABF 122.31%);
+        color: transparent;
+        background-clip: text;
+        font-size: 32px;
+      }
+      .dateInfo{
+        color: white;
+        font-size: 18px;
+      }
+      .mapLeft{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+      }
+      .mapCenter{
+        width: 2px;
+        height: 662px;
+        margin: 0 80px;
+        background: linear-gradient(118.66deg, #9132B3 64.11%, #41C9FF 76.22%);
+        border-radius: 12px;
+      }
+      .mapRight{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  }
+  .sectionSix{
+    background: url('../public/images/bg7.svg') no-repeat;
+    background-size: 100%,100%;
+    height: 1057px;
+    position: relative;
+    .partnerTitle{
+      color: white;
+      font-weight: bold;
+      font-size: 54px;
+      margin-bottom: 54px;
+    }
+    .partnerList{
+      padding: 0 120px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      img{
+        width: 206px;
+        height: 145px;
+      }
+    }
+    .footer{
+      height: 206px;
+      position: absolute;
+      padding: 0 244px 0 120px;
+      bottom: 0;
+      width: 1440px;
+      display: flex;
+      justify-content: space-between;
+      .footerLeft{
+        display: flex;
+        .footLogo{
+          display: flex;
+          flex-direction: column;
+          color: #FFFFFF;
+          margin-right: 140px;
+          span{
+            font-size: 14px;
+          }
+          div{
+            display: flex;
+            margin-bottom: 22px;
+            img{
+              width: 38px;
+              height: 38px;
+              margin-right: 10px;
+            }
+            div{
+              display: flex;
+              flex-direction: column;
+              .oneland{
+                font-size: 24px;
+                line-height: 24px;
+              }
+              .yourLand{
+                font-size: 14px;
+              }
+            }
+          }
+        }
+        .footInfo{
+          display: flex;
+          div{
+            display: flex;
+            flex-direction: column;
+            margin-right: 60px;
+            span{
+              font-size: 14px;
+              color:rgba(255, 255, 255, .4);
+              margin-bottom: 12px;
+              font-weight: 500;
+              transition: all .2s;
+              cursor: pointer;
+              &:hover{
+                color: #12DCF6;
+              }
+              &:nth-child(1){
+                color: white;
+                line-height: 150%;
+              }
+            }
+          }
+        }
+      }
+      .footerRight{
+        display: flex;
+        flex-direction: column;
+        span{
+          color: white;
+          font-weight: bold;
+          font-size: 14px;
+          margin-bottom: 20px;
+        }
+        div{
+          display: flex;
+          i{
+            margin-right: 20px;
+            cursor: pointer;
+            transition: all .2s;
+          }
+        }
+      }
+    }
+  }
+  .roleGroup{
+    display: flex;
+    flex-direction: column;
+    .commonDivStyle{
+      display: flex;
+      &>div{
+        margin-left: 160px;
+        margin-bottom: 80px;
+      }
+      .roleDiv{
+        display: flex;
+        img{
+          width: 100px;
+          height: 100px;
+        }
+        .roleInfo{
+          display: flex;
+          flex-direction: column;
+          width: 320px;
+          .roleTop{
+            color: white;
+            font-size: 36px;
+            margin-bottom: 20px;
+          }
+          .roleBottom{
+            color:rgba(255, 255, 255, .5);
+            font-weight: 500;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+  .infomation{
+    margin-top: 42px;
+    background: url('../public/images/bg3.svg') no-repeat;
+    width: calc(100% - 240px);
+    background-size: contain;
+    height: 352px;
+    display: flex;
+    justify-content: space-evenly;
+    backdrop-filter: blur(100px);
+    .infomationBox{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      img{
+        width: 46px;
+        height: 46px;
+      }
+      .infomationTitle{
+        font-size: 24px;
+        color: white;
+        margin: 30px 0 20px 0;
+      }
+      .infomationTitle1{
+        font-size: 16px;
+        color: rgba(255, 255, 255, 0.5);
+        width: 230px;
+        text-align: center;
+      }
+    }
+  }
+  .maxWidthStyle{
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .in{
+    width: 20px;
+    height: 20px;
+    background-image: url('/images/in.svg');
+    &:hover{
+      background-image: url('/images/in_hover.svg');
+    }
+  }
+  .twiter{
+    width: 20px;
+    height: 20px;
+    background-image: url('/images/twiter.svg');
+    &:hover{
+      background-image: url('/images/twiter_hover.svg');
+    }
+  }
+  .facebook{
+    width: 20px;
+    height: 20px;
+    background-image: url('/images/facebook.svg');
+    &:hover{
+      background-image: url('/images/facebook_hover.svg');
+    }
+  }
+  .circle{
+    width: 20px;
+    height: 20px;
+    background-image: url('/images/circle.svg');
+    &:hover{
+      background-image: url('/images/circle_hover.svg');
+    }
+  }
+}
