@@ -7,6 +7,7 @@ const OverViewWrapper = styled.div`
     flex: 1;
     display: flex;
     flex-direction: column;
+	padding: 0 50px 0 46px;
 `;
 
 const OverViewBox = styled.div`

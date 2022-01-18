@@ -1,6 +1,7 @@
 import { useState } from "react";
 import styled from "styled-components"
 import MapFilterGroup from "./mapFilterGroup";
+import MapView from "./mapView";
 import OverView from "./overView";
 import { SandBoxInfo } from "./sandBoxInfo";
 
@@ -42,8 +43,7 @@ const RightWapper = styled.div`
 	border-top-right-radius: 16px;
 	display: flex;
 	flex-direction: column;
-	padding: 0 50px 0 46px;
-`
+`;
 
 const TabWapper = styled.div`
 	
@@ -140,6 +140,9 @@ export const MarketPlace: React.FC = () => {
 				</TabWapper>
 				{
 					selectkey == 'overView' && <OverView></OverView>
+				}
+				{
+					selectkey == 'mapView' && <MapView></MapView>
 				}
 			</RightWapper>
 		</MarketWapper>
