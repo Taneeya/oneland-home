@@ -1,14 +1,15 @@
 import { useState } from "react";
 import styled from "styled-components"
 import MapFilterGroup from "./mapFilterGroup";
+import MapListView from "./mapListView";
 import MapView from "./mapView";
 import OverView from "./overView";
 import { SandBoxInfo } from "./sandBoxInfo";
 
 
 const MarketWapper = styled.div`
-    flex: 1;
     display: flex;
+	height: calc(100% - 76px);
 `;
 const LeftWapper = styled.div`
     width: 368px;
@@ -119,7 +120,7 @@ export const MarketPlace: React.FC = () => {
 					selectkey == 'overView' && <SandBoxInfo></SandBoxInfo>
 				}
 				{
-					selectkey == 'mapView' && <MapFilterGroup></MapFilterGroup>
+					(selectkey == 'mapView' || selectkey == 'listView') && <MapFilterGroup></MapFilterGroup>
 				}
 			</LeftWapper>
 			<RightWapper>
@@ -143,6 +144,9 @@ export const MarketPlace: React.FC = () => {
 				}
 				{
 					selectkey == 'mapView' && <MapView></MapView>
+				}
+				{
+					selectkey == 'listView' && <MapListView></MapListView>
 				}
 			</RightWapper>
 		</MarketWapper>
