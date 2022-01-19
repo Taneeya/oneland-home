@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import CommonBtn from './common/commonBtn'
 
 const MapItemWarpper = styled.div<{ height?: string, width?: string }>`
     height: ${({ height }) => height || '308px'};
@@ -55,6 +56,14 @@ const MapItemWarpper = styled.div<{ height?: string, width?: string }>`
             font-weight: bold;
         }
     }
+    .btns{
+        display: flex;
+        justify-content: space-between;
+        padding: 14px 0;
+      & > div:first-child {
+        margin-right: 14px;
+      }
+    }
 `;
 interface IPorps{
     width?: string;
@@ -92,6 +101,18 @@ const MapItem = (props:IPorps) => {
             <div className="price">
                 <span className="price-name">Current Price</span>
                 <span className="price-value">3.5 ETH</span>
+            </div>
+            <div className="btns">
+                <CommonBtn
+                    onClick={() => {}}
+                    mode='light'
+                    text='Buy'
+                />
+                <CommonBtn
+                    onClick={() => {}}
+                    mode='grey'
+                    text='Discuss'
+                />
             </div>
         </MapItemWarpper>
     )
